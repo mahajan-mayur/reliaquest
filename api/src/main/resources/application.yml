@@ -1,0 +1,16 @@
+spring.application.name: employee-api
+server.port: 8111
+logging:
+  level:
+    root: INFO
+    com.reliaquest.api.client.EmployeeClient: DEBUG  # Enable Feign logging
+    org.springframework.web: DEBUG
+    feign: DEBUG
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: FULL  # Logs request/response details
+        connectTimeout: 5000  # 5 seconds
+        readTimeout: 5000

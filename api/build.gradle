@@ -1,0 +1,16 @@
+plugins {
+    id 'project-conventions'
+}
+
+dependencies {
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign:4.1.2'
+    implementation 'commons-io:commons-io:2.14.0' // added to resolve Possible denial of service attack on untrusted input to XmlStreamReader
+    implementation 'jakarta.validation:jakarta.validation-api:2.0.1'
+    implementation 'org.springframework.retry:spring-retry'
+    implementation 'org.springframework:spring-aspects'
+}
+
+springBoot {
+    mainClass = 'com.reliaquest.api.ApiApplication'
+}
