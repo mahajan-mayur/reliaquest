@@ -18,7 +18,6 @@ This project implements a RESTful API for employee management that interacts wit
 - Spring Boot
 - Spring Cloud OpenFeign
 - Spring Retry
-- JUnit 5
 - Mockito
 - Lombok
 - Gradle
